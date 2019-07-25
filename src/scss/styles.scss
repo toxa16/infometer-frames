@@ -1,22 +1,16 @@
 // rgba(220, 53, 69)  red
 // rgba(255, 193, 7)  yellow
-// #6c757d rgba(23, 162, 184)  blue(info)
+// #17a2b8 rgba(23, 162, 184)  blue(info)
 // rgba(40, 167, 69)  green
 
 @for $i from 0 through 49 {
   .im-progress-color-#{$i} {
-    color: scale-color($color: mix(
-      rgba(220, 53, 69, ((100 - $i) / 100)),
-      rgba(255, 193, 7, ($i / 100))
-    ), $alpha: 50%); 
+    color: mix(rgb(220, 53, 69), #eecc00, (100 - $i * 2));
   }
 }
 
 @for $i from 50 through 100 {
   .im-progress-color-#{$i} {
-    color: scale-color($color: mix(
-      rgba(255, 193, 7, ((100 - $i) / 100)),
-      rgba(40, 167, 69, ($i / 100))
-    ), $alpha: 50%); 
+    color: mix(#eecc00, rgb(40, 167, 69), (200 - $i * 2));
   }
 }

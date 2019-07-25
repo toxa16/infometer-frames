@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:scss": "node-sass ./src/scss/styles.scss ./dist/css/styles.css",
+    "compile:scss:watch": "node-sass --watch ./src/scss/styles.scss ./dist/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
