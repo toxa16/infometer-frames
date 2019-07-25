@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile:scss": "node-sass ./src/scss/styles.scss ./dist/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }
