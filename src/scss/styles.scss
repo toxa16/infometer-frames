@@ -4,13 +4,13 @@
 // rgba(40, 167, 69)  green
 
 @for $i from 0 through 49 {
-  .im-progress-color-#{$i} {
+  .imc-#{$i} {
     color: mix(rgb(220, 53, 69), #eecc00, (100 - $i * 2));
   }
 }
 
 @for $i from 50 through 100 {
-  .im-progress-color-#{$i} {
+  .imc-#{$i} {
     color: mix(#eecc00, rgb(40, 167, 69), (200 - $i * 2));
   }
 }
