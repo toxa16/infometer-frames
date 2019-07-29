@@ -11,6 +11,8 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/e83af1d552.js"></script>
 
+  <link rel="stylesheet" href="../dist/css/styles.css">
+
   <style>
     html, body {
       height: 100%;
@@ -44,10 +46,11 @@
         <div class="col-12 col-md-10 col-lg-8 mx-auto">
 
           <!-- Content start -->
-          <div>
+          <div class="mt-4">
             <h1 class="font-weight-bold text-info">InfoMeter</h1>
             <p>Check your info now!</p>
-            <form action="/result" method="get">
+
+            <form class="mb-5" action="/result" method="get">
               <div class="form-group">
                 <input class="form-control form-control-lg" type="text"
                     name="q" placeholder="e.g. &quot;Kate loves me&quot;" />
@@ -57,13 +60,38 @@
               </div>
             </form>
 
-            <div class="text-left">
-              <div>"Kate loves me" 37%</div>
-              <div>"Earth is flat" 4%</div>
-              <div>"Users won't wait more than 5 seconds for your web page to load" 75%</div>
-              <div>"React is awesome" 99%</div>
-              <div>"Node.js is awesome" 94%</div>
+            <div class="row text-left mb-4">
+              <div class="col-10 col-sm-10 col-md-10">
+                <div class="text-nowrap mb-2">
+                  <span class="text-muted text-wrap">"Kate loves me"</span>
+                  <span class="text-muted mx-1">-</span>
+                  <span class="font-weight-bold imc-37">37%</span>
+                </div>
+                <div class="text-nowrap mb-2">
+                  <span class="text-muted text-wrap">"Earth is flat"</span>
+                  <span class="text-muted mx-1">-</span>
+                  <span class="font-weight-bold imc-4">4%</span>
+                </div>
+                <div class="text-nowrap mb-2">
+                  <span class="text-muted text-wrap">
+                    "Users won't wait more than 5 seconds for your web page to load"
+                  </span>
+                  <span class="text-muted mx-1">-</span>
+                  <span class="font-weight-bold imc-75">75%</span>
+                </div>
+                <div class="text-nowrap mb-2">
+                  <span class="text-muted text-wrap">"React is awesome"</span>
+                  <span class="text-muted mx-1">-</span>
+                  <span class="font-weight-bold imc-99">99%</span>
+                </div>
+                <div class="text-nowrap mb-2">
+                  <span class="text-muted text-wrap">"Node.js is awesome"</span>
+                  <span class="text-muted mx-1">-</span>
+                  <span class="font-weight-bold imc-94">94%</span>
+                </div>
+              </div>
             </div>
+
           </div>
           <!-- / Content end -->
 
